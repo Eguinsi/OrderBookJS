@@ -5,6 +5,18 @@ const exphbs  = require('express-handlebars');
 const path = require('path');
 const request = require('request');
 const bodyParser = require('body-parser');
+const toString = {}.toString;
+
+module.exports = Array.isArray || function (arr) {
+  return toString.call(arr) == '[object Array]';
+};
+
+onmessage = function(event) {
+    setTimeout(function() {
+        postMessage(event.data)
+    }, 150)
+}
+
 
 const ccxt = require ('./ccxt/ccxt.js')
     , id = 'binance'
