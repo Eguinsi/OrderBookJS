@@ -11,6 +11,9 @@ module.exports = Array.isArray || function (arr) {
   return toString.call(arr) == '[object Array]';
 };
 
+btc_ticker = binance.fetch_ticker('BTC/USDT')
+btc_ticker
+
 onmessage = function(event) {
     setTimeout(function() {
         postMessage(event.data)
