@@ -12,7 +12,8 @@ module.exports = Array.isArray || function (arr) {
 };
 
 btc_ticker = binance.fetch_ticker('BTC/USDT')
-btc_ticker
+btc_ticker = binance
+
 
 onmessage = function(event) {
     setTimeout(function() {
